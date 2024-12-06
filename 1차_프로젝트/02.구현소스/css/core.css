@@ -3,20 +3,21 @@
 /* 공통 셋팅을 위한 클래스 + 웹폰트 */
 
 /* 웹폰트 CDN */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Gugi&family=Nanum+Gothic&family=Single+Day&family=ZCOOL+KuaiLe&display=swap');
-/* 
-    0. 메뉴 등 일반체
-    font-family: 'Noto Sans KR', sans-serif;
-    1. 캐릭터 설명 제목체
-    font-family: 'Gugi', cursive;
-    2. 캐릭터 설명 내용체
-    font-family: 'Single Day', cursive;
-    3. 캐릭터 설명 한자체
-    font-family: 'ZCOOL KuaiLe', cursive;
-    4. 전체 공통체(메뉴 등)
-    font-family: 'Nanum Gothic', sans-serif;
-*/
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Stint+Ultra+Condensed&display=swap');
 
+
+/* .sofia-sans-condensed-<uniquifier> {
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.stint-ultra-condensed-regular {
+    font-family: "Stint Ultra Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  
 /* 전체 글자크기 */
 html{
     font-size: 10px;

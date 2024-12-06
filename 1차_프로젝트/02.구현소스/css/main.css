@@ -3,6 +3,8 @@
 /* 레이아웃 3 CSS */
 
 /* 외부 CSS 불러오기 */
+/* 변수셋팅 CSS */
+@import url(./variables.css);
 /* 12그리드 flex CSS */
 @import url(./grid_12_flex.css);
 /* 리셋 CSS */
@@ -19,7 +21,7 @@ html,body,h1,h2,ul,ol{
 }
 
 /* 공사중표시 */
-body * {
+.ing * {
     outline: 1px dashed orange;
 }
 

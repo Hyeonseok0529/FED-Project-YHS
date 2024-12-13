@@ -12,6 +12,8 @@
   <body>
     <!-- 상단 고정 코딩구역 시작 -->
 
+    <!-- 페이드 박스 -->
+    <div class="fadebox"></div>
     <!-- 장바구니 서브메뉴 -->
     <div class="minicart">
       <!-- 장바구니 서브메뉴 박스 -->
@@ -192,8 +194,9 @@
     <div id="cont-area">
       <!-- 컨텐츠 박스 -->
       <main class="cont-area inbox">
-        <!-- 메인페이지 영역 -->
+        <!-- 2-1. 메인페이지 영역 -->
         <section class="page">
+          <h2 class="blind">메인</h2>
           <!-- 메인 텍스트 박스 -->
           <div class="main-textbox">
             <!-- 메인 텍스트 -->
@@ -205,7 +208,9 @@
               <span>FABRICS</span>
             </h1>
           </div>
-          <h2 class="blind">메인</h2>
+          <!-- Shop 버튼 박스 -->
+          <div class="shopAbtnbox"></div>
+          <a href="#" class="shopAbtn">SHOP ALL</a>
           <video
             src="./video/main-video.mp4"
             autoplay
@@ -216,14 +221,136 @@
             class="main-video"
           ></video>
         </section>
+        <!-- 2-2. About Us 영역 -->
         <section class="page">
-          <h2 class="temp-tit">About us</h2>
+          <h2 class="blind">About us</h2>
+          <!-- 이미지 박스 -->
+          <div class="imgbox">
+            <img src="./images/about_us1.png" alt="about us image1" />
+            <img src="./images/about_us2.jpg" alt="about us image2" />
+            <img src="./images/about_us3.png" alt="about us image3" />
+            <img src="./images/about_us4.jpg" alt="about us image4" />
+            <img src="./images/about_us5.jpg" alt="about us image5" />
+            <img src="./images/about_us6.png" alt="about us image6" />
+          </div>
+          <!-- 텍스트 박스 -->
+          <div class="aboutTextbox">
+            <span class="mainTxt"
+              >CREATING PERFECT <br />LINES AND IMPOSING <br />PRESENCE</span
+            >
+            <span class="subTxt"
+              >Developed the concept of exclusivity, a Sol’ace features timeless
+              furniture, with natural<br />
+              fabrics, curved lines, plenty of mirrors and classic design, which
+              can be incorporated <br />into any decor project. The pieces
+              enchant for their sobriety, to last for generations,<br />
+              faithful to the shapes of each period, with a touch of the
+              present.</span
+            >
+          </div>
         </section>
+
+        <!-- 2-3. 추천제품소개 영역 -->
         <section class="page">
-          <h2 class="temp-tit">추천제품소개</h2>
+          <h2 class="blind">추천제품소개</h2>
+          <!-- 소개박스 -->
+          <div class="recommendBox">
+            <!-- 이미지박스 -->
+            <div class="recImgbox">
+              <a href="#">
+                <img src="./images/recommend_image.png" alt="recommend_image" />
+              </a>
+            </div>
+            <!-- 텍스트 박스 -->
+            <div class="recTextbox">
+              <span class="productName">Matté Wood Chair</span>
+              <span class="productDesc"
+                >Refinement Chair with Ripped Seat, made of retro Eucalyptus
+                wood, of<br />
+                great resistance, Kiln dried, made with a spike system and
+                painted with<br />
+                P.U. (Polyurethane) With its entire structure painted in wood,
+                it offers a <br />
+                lot of elegance to your environment and when cleaning is very
+                easy, as<br />
+                it is washable and light for movement. Enough of receiving
+                visitors and<br />
+                not having a place to accommodate them. With the chair, your
+                days as
+                <br />
+                a host will be marked by a lot of elegance and
+                sophistication.</span
+              >
+              <a href="#" class="viewbtn">VIEW PRODUCT</a>
+            </div>
+          </div>
         </section>
+        <!-- 2-4. Lookbook 영역 -->
         <section class="page">
-          <h2 class="temp-tit">Lookbook</h2>
+          <h2 class="temp-tit blind">Lookbook</h2>
+          <!-- 전체박스 -->
+          <div class="lookbookBox">
+            <!-- 세로글자 -->
+            <div class="lbVerTxtbox">
+              <div class="lbVerTxt">LOOKBOOK</div>
+            </div>
+
+            <!-- 텍스트 -->
+            <div class="lbTxt">
+              <span class="lbtit">LOOKBOOK</span>
+              <span class="lbDesc"
+                >The pieces stand out for their contemporary straight lines and
+                imposing presence. Current, following the world trend of the
+                great masters, the furniture stands out for its noble and
+                innovative materials, composing sophisticated and exclusive
+                environments.</span
+              >
+            </div>
+
+            <!-- 상품 슬라이드 및 설명 -->
+            <div class="lbSlideDesc">
+              <!-- 위쪽 타이틀 -->
+              <div class="upTitBox">
+                <span class="upTit1">ITEM</span>
+                <span class="upTit2">DESCRIPTION</span>
+              </div>
+              <!-- 슬라이드 박스 -->
+              <div class="lbSlideBox">
+                <!-- 슬라이드 이미지 -->
+                <div class="slideImg">
+                  <img
+                    src="./images/lb_slide1.png"
+                    alt="lookbook slide image1"
+                  />
+                </div>
+              </div>
+
+<!-- 질문 : 여기에 버튼박스를 슬라이드 박스 안에 작성을 하고 싶은데 HTML , CSS 궁금합니다.. -->
+
+              <!-- 버튼박스 -->
+              <div class="btnBox">
+                <!-- See Lookbook 버튼 -->
+                <a href="#" class="lbbtn">SEE LOOKBOOK</a>
+                <!-- Shop All 버튼 -->
+                <a href="#" class="lbshopbtn">SHOP ALL</a>
+              </div>
+            </div>
+            <!-- 하단 설명박스 -->
+            <div class="downDescBox">
+              <div class="materialsBox">
+                <div class="mattit"></div>
+                <div class="matDesc"></div>
+              </div>
+              <div class="prodBox">
+                <div class="prodtit"></div>
+                <div class="prodDesc"></div>
+              </div>
+              <div class="categBox">
+                <div class="categtit"></div>
+                <div class="categDesc"></div>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="page">
           <h2 class="temp-tit">articles-main</h2>

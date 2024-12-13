@@ -395,3 +395,15 @@ html,body,h1,h2,ul,ol{
     margin: 0 auto;
     width: 100%;
 }
+/* 슬라이드 하단 텍스트 */
+.downDescBox{
+}
+.materialsBox{
+width: 100%;
+}
+.prodBox{
+width: 100%;
+}
+.categBox{
+width: 100%;
+}

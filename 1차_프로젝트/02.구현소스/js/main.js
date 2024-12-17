@@ -1,13 +1,15 @@
 // 메인 JS
 
-$('.hambtn').click(function(){
+$('.hambtn').click(function(e){
+    e.preventDefault(); 
     let isOn = $(this).is('.on');
     $('.smenu').css({translate: isOn?'0':'0 -170%'});
     $('body').toggleClass('on');
 })
 
 const $cartBox = $('.minicart');
-$('.right-menu').click(function(){
+$('.right-menu').click(function(e){
+    e.preventDefault(); 
     let isOn = $cartBox.css('translate');
     console.log(isOn);
     $cartBox.css({translate: isOn=='100%'?'0':'100%'});

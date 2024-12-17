@@ -79,18 +79,24 @@ ol {
   left: 50%;
   translate: -50% -50%;
   z-index: 9;
-  width: 59vw;
-  display: flex;
+  /* width: 59vw; */
+  /* display: flex;
   gap: 1.3vw;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   color: #fff;
   font-family: var(--font-title);
   font-size: min(8rem, 5vw);
   font-weight: 400;
   font-style: normal;
   letter-spacing: -0.4rem;
+  text-align: center;
+  white-space: nowrap;
+}
+.main-text br~span{
+  display: inline-block;
+  margin-top: 1.5vw;
 }
 
 /* SHOP ALL 버튼 */
@@ -125,10 +131,14 @@ ol {
   /* 이미지 부모박스 */
   position: absolute;
 }
+.imgbox img{
+  left: 50%;
+}
 .imgbox img:nth-child(1) {
   position: absolute;
   height: 25vh;
-  left: 4rem;
+  /* left: 4rem; */
+  translate: -31vw;
   top: 15rem;
   width: 23rem;
   object-fit: cover;
@@ -136,7 +146,8 @@ ol {
 .imgbox img:nth-child(2) {
   position: absolute;
   height: 35vh;
-  right: 80rem;
+  /* right: 80rem; */
+  translate: 18vw;
   top: 1rem;
   width: 33rem;
   object-fit: cover;
@@ -144,7 +155,8 @@ ol {
 .imgbox img:nth-child(3) {
   position: absolute;
   height: 30vh;
-  right: 0;
+  /* right: 0; */
+  translate: 26vw;
   top: 39rem;
   width: 20rem;
   object-fit: cover;
@@ -152,7 +164,8 @@ ol {
 .imgbox img:nth-child(4) {
   position: absolute;
   height: 39vh;
-  left: 90rem;
+  /* left: 90rem; */
+  translate: -27vw;
   top: 55rem;
   width: 35rem;
   object-fit: cover;
@@ -160,16 +173,17 @@ ol {
 .imgbox img:nth-child(5) {
   position: absolute;
   height: 39vh;
-  left: 1rem;
+  /* left: 1rem; */
+  translate: 1vw;
   top: 44rem;
   width: 41rem;
   object-fit: cover;
 }
 .imgbox img:nth-child(6) {
   position: absolute;
-
   height: 18vh;
-  right: 20rem;
+  /* right: 20rem; */
+  translate: -14vw;
   top: 20rem;
   width: 17rem;
   object-fit: cover;
@@ -188,7 +202,7 @@ ol {
   top: 50%;
   left: 50%;
   translate: -50% -100%;
-  font-size: 7rem;
+  font-size: min(7rem,3vw);
   width: 55vw;
   font-family: var(--font-title);
   font-weight: 600;
@@ -211,6 +225,8 @@ ol {
 
 /****************2. 추천제품 영역  *****************/
 .recommendBox {
+  display: flex;
+  flex-direction: row-reverse;
   /* 텍스트박스 부모자격 */
   position: relative;
   width: 100%;
@@ -219,9 +235,11 @@ ol {
   border-bottom: 1px solid #ebe6d7;
   box-sizing: border-box;
 }
+.recommendBox>div{
+  width: 50%;
+}
 /* 이미지 */
 .recImgbox {
-  width: 50%;
   height: 100vh;
   margin-left: auto;
 }
@@ -242,10 +260,9 @@ ol {
 /* 텍스트 */
 .recTextbox {
   display: flex;
-  position: absolute;
-  top: 0;
+  /* position: absolute;
+  top: 0; */
   padding: 0 0 14vw 11vw;
-  width: 50%;
   height: 100%;
   flex-wrap: wrap;
   flex-direction: column;

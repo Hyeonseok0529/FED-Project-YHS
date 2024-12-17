@@ -1,12 +1,12 @@
 @charset "utf-8";
 
-/* 도깨비 PJ : 공통 모듈 CSS - common.css */
+/* 개인인 PJ : 공통 모듈 CSS - common.css */
 /* 공유기능 요소 셋팅 */
 
 /************* 1.상단영역 *************/
 /* 상단영역 공통 페이드 박스 */
-.fadebox{
-  background: rgba(100, 88, 50, .51);
+.fadebox {
+  background: rgba(100, 88, 50, 0.51);
   height: 100vh;
   left: 0;
   position: fixed;
@@ -14,7 +14,7 @@
   width: 100vw;
   z-index: 1;
   display: none;
-  }
+}
 
 .top-area {
   position: fixed;
@@ -43,13 +43,11 @@
 }
 */
 
-
-
 /* 상단탑영역 a태그 */
 .top-area a {
   font-family: var(--font-menu);
   color: #fff;
-  font-size: 3rem;
+  font-size: 2vw;
   transition: color 0.4s ease-in-out;
 }
 
@@ -202,7 +200,7 @@ aside .smenu {
 }
 .smenu .inbox {
   display: flex;
-  padding: 8rem;
+  padding: 8rem 5rem;
   box-sizing: border-box;
 }
 /* 햄버거 버튼 클릭시 스타일 1 
@@ -225,19 +223,22 @@ aside .smenu {
   font-family: var(--font-title);
   font-size: 6rem;
   margin-top: 10px;
-  margin-bottom: 2px;
+  margin-bottom: 2vh;
   font-weight: 700;
   font-style: normal;
   /* 자간 설정 */
   letter-spacing: -0.6rem;
 }
 .smenu dl {
+  margin-top: -4vh;
   padding: 2vw;
-  font-size: 2.2rem;
+  font-size: 0.2rem;
   letter-spacing: 0.5rem;
 }
 .smenu dd {
   padding: 0px 0px 10px;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 
 /* 밑줄 애니메이션 */
@@ -245,7 +246,7 @@ aside .smenu {
 /* 밑줄 애니메이션 위해 부모자격 부여!!!!!!!!! */
 /* 애니메이션을 할때는 우선 보이는 것이 중요함. */
 .smenu dl > dd > a {
-position: relative;
+  position: relative;
 }
 .smenu dl > dd > a::after {
   content: "";
@@ -254,20 +255,19 @@ position: relative;
   bottom: 2px;
   left: 0;
   width: 0;
-  height: .5px;
+  height: 0.5px;
   margin-left: 100%;
   background-color: #645832;
-  transition: 0.2s ease-out;
+  transition: 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* 호버를 쓸 때는 가상요소에다가 주면 안되고,
 호버를 하는 대상에다가 주고 가상요소를 주어야 함. */
 
-/*  오버 아웃시 반대방향으로 효과를 주려면 ??????????????????????? */
 .smenu dd > a:hover::after {
   width: 100%;
   margin-left: 0;
-  transition: width 0.2s ease-out;
+  transition: width 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .smenu dd a {
@@ -275,8 +275,6 @@ position: relative;
   color: #645832;
   font-size: 2.5rem;
 }
-
-
 
 /* 1-1-2. Shop 버튼 */
 .shopbtn {
@@ -330,7 +328,7 @@ position: relative;
   border-radius: 100%;
   font-size: 1.6rem;
   display: block;
-  width: 3.5rem;
+  width: 5.5vh;
   text-align: center;
 }
 .bagNbtn:hover {
@@ -341,5 +339,5 @@ position: relative;
 
 /**************** 2. 하단영역 ****************/
 .footer-area {
-  height: 320px;
+  height: 85vh;
 }

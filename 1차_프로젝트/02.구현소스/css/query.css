@@ -47,15 +47,18 @@
     }
     .recommendBox > div {
       width: 56vw;
-      height: 45vw;
+      height: 55vw;
+      margin: 0 auto;
     }
     .bagNbtn,
     .shopbtn {
       display: none;
     }
     .recTextbox {
-      padding: 0px 0 7vw 14vw;
-      box-sizing: none;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          padding: 0;
     }
     .viewbtn {
         font-size: 2.3vw;
@@ -63,6 +66,15 @@
     .productName {
         font-size: 5.4vw;
     }
+    .recommendBox::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      opacity: .5;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.604);
+  }
   }
   @media screen and (max-width: 700px) {
     .mainTxt {
@@ -70,7 +82,7 @@
       width: 85vw;
     }
     .subTxt {
-      font-size: 2.5vw;
+      font-size: 2.7vw;
       width: 80vw;
     }
   }
@@ -89,5 +101,17 @@
     .shopAbtn {
       top: 65%;
     }
+  }
+  @media screen and (max-width: 500px) {
+    .mainTxt{
+    font-size: 9.6vw;
+    width: 90vw;
+    }
+
+.subTxt {
+    font-size: 3.1vw;
+    width: 95vw;
+    height: 30vw;
+}
   }
 }

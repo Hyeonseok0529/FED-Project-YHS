@@ -1,21 +1,93 @@
 @charset "utf-8";
 
-
-@media screen and (max-width: 1200px) {
-    /*  질문 ! : 미디어 쿼리의 흐름은 어떻게 진행하는 것이 좋을까요?  */
+@media screen and (max-width: 1400px) {
+  .imgbox img:nth-child(3) {
+    display: none;
+  }
 }
-@media screen and (max-width: 900px) {
-    .recom-box{
-        height: auto;
+@media screen and (max-width: 1400px) {
+  .imgbox img:nth-child(4) {
+    translate: 14vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .shopAbtn {
+    top: 65%;
+  }
+  .imgbox img:nth-child(6) {
+    display: none;
+  }
+  .imgbox img:nth-child(2) {
+    translate: 2vw 3vh;
+  }
+  @media screen and (max-width: 1100px) {
+    .imgbox img:nth-child(4) {
+      display: none;
     }
-    .main-text{
-        font-size: 8vw;
+    .imgbox img:nth-child(5) {
+      translate: -27vw 7vh;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .shopAbtn {
+      top: 65%;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .recom-box {
+      height: auto;
+    }
+    .main-text {
+      font-size: 7vw;
+      letter-spacing: -1px;
     }
     .recommendBox {
-       flex-direction: column;
-       height: auto;
+      flex-direction: column;
+      height: auto;
     }
-    .recommendBox>div{
-      width: 100%;
+    .recommendBox > div {
+      width: 56vw;
+      height: 45vw;
     }
+    .bagNbtn,
+    .shopbtn {
+      display: none;
+    }
+    .recTextbox {
+      padding: 0px 0 7vw 14vw;
+      box-sizing: none;
+    }
+    .viewbtn {
+        font-size: 2.3vw;
+    }
+    .productName {
+        font-size: 5.4vw;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .mainTxt {
+      font-size: 9vw;
+      width: 85vw;
+    }
+    .subTxt {
+      font-size: 2.5vw;
+      width: 80vw;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .left-menu ul {
+      gap: 1.5rem;
+      padding: 0px 1.5rem;
+    }
+    .hamShop-box {
+      height: 11rem;
+    }
+    .main-text {
+      top: 46%;
+    }
+    .shopAbtn {
+      top: 65%;
+    }
+  }
 }

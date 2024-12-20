@@ -86,6 +86,12 @@
     .lookbookBox > div {
       width: 100%;
     }
+    .lbtit {
+      padding: 7vh 0px;
+    }
+    .lbDesc {
+      margin: 3vh 4vh 10vh;
+    }
     .lbSlideDesc {
       height: auto;
     }
@@ -134,39 +140,36 @@
       position: static;
     }
 
-/* 아래 박스 */
-.article-page{
-  height: auto;
-}
-.verFlexbox{
-  flex-direction: column;
-  height: auto;
-}
-.artVerbox{
-  display: none;
-}
-.artiTxtbox{
-  width: 100%;
-  height: auto;
-}
-.artiDesc{
-  height: auto;
-  line-height: 2;
-  padding: 0;
-}
+    /* 아래 박스 */
+    .article-page {
+      height: auto;
+    }
+    .verFlexbox {
+      flex-direction: column;
+      height: auto;
+    }
+    .artVerbox {
+      display: none;
+    }
+    .artiTxtbox {
+      width: 100%;
+      height: auto;
+    }
+    .artiDesc {
+      height: auto;
+      line-height: 2;
+      padding: 0;
+    }
 
-.artiImgbox{
-  width: 100%;
-  height: auto;
-}
+    .artiImgbox {
+      width: 100%;
+      height: auto;
+    }
 
-.footcatBox > div {
-  flex-basis: 50%;
-  box-sizing: border-box;
-}
-
-
-
+    .footcatBox > div {
+      flex-basis: 50%;
+      box-sizing: border-box;
+    }
   }
   @media screen and (max-width: 700px) {
     .mainTxt {

@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+body {
+  background-color: #ebe6d7;
+}
+
+.ldContbox {
+  width: 54%;
+  height: 98vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  position: relative;
+}
+
+/* 이미지 1 */
+.aniImg1 {
+  width: 50%;
+  height: auto;
+  /* display: inline-block; */
+  overflow: hidden;
+}
+
+.aniImg1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 0;
+  animation: show-ani 1s cubic-bezier(0.18, 0.77, 0.04, 0.86) 0.5s forwards;
+}
+
+@keyframes show-ani {
+  to {
+    scale: 1;
+  }
+}
+
+/* 이미지 2 */
+.aniImg2 {
+  position: absolute;
+  top: 41vh;
+  left: 0;
+  width: 37%;
+  height: auto;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.aniImg2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 0;
+  animation: show-ani 1s cubic-bezier(0.18, 0.77, 0.04, 0.86) 0.7s forwards;
+}
+
+@keyframes show-ani {
+  to {
+    scale: 1;
+  }
+}
+/* 이미지 3 */
+.aniImg3 {
+  position: absolute;
+  top: 59vh;
+  left: 16vw;
+  width: 30%;
+  height: auto;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.aniImg3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 0;
+  animation: show-ani 1s cubic-bezier(0.18, 0.77, 0.04, 0.86) 0.9s forwards;
+}
+
+@keyframes show-ani {
+  to {
+    scale: 1;
+  }
+}
+/* 이미지 4 */
+.aniImg4 {
+  position: absolute;
+  top: 56vh;
+  left: 30vw;
+  width: 37%;
+  height: auto;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.aniImg4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 0;
+  animation: show-ani 1s cubic-bezier(0.18, 0.77, 0.04, 0.86) 1.1s forwards;
+}
+
+@keyframes show-ani {
+  to {
+    scale: 1;
+  }
+}
+/* 이미지 5 */
+.aniImg5 {
+  position: absolute;
+  top: 20vh;
+  left: 33vw;
+  width: 34%;
+  height: auto;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.aniImg5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 0;
+  animation: show-ani 1s cubic-bezier(0.18, 0.77, 0.04, 0.86) 1.3s forwards;
+}
+
+@keyframes show-ani {
+  to {
+    scale: 1;
+  }
+}
+/* 이미지 6 */
+.aniImg6 {
+  position: absolute;
+  top: 2vh;
+  left: 22vw;
+  width: 34%;
+  height: auto;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.aniImg6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 0;
+  animation: show-ani 1s cubic-bezier(0.18, 0.77, 0.04, 0.86) 1.5s forwards;
+}
+
+@keyframes show-ani {
+  to {
+    scale: 1;
+  }
+}
+/* 이미지 7 */
+.aniImg7 {
+  position: absolute;
+  top: 8vh;
+  left: 4vw;
+  width: 34%;
+  height: auto;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.aniImg7 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 0;
+  animation: show-ani 1s cubic-bezier(0.18, 0.77, 0.04, 0.86) 1.7s forwards;
+}
+
+@keyframes show-ani {
+  to {
+    scale: 1;
+  }
+}
+
+/* 페이드 아웃 셋팅 */
+/* 페이지 전환효과용 가림막 */
+.pg-cover {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* height: 0vh; */
+        /* display: none; */
+  background-color: black;
+  /* 트랜지션: 속시이지 */
+  /* transition: all 0.8s ease-in-out; */
+  /* -> 애니메이션을 줄때에는 트랜지션을 빼야한다! */
+}

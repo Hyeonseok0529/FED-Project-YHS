@@ -10,8 +10,68 @@
 /* Core CSS */
 @import url(./core.css);
 
+/* .topBdbox{
+    position: fixed;
+    border-bottom: 1px solid #d1c7a3;
+    opacity: 0.5;
+    width: 100%;
+    height: 9vh;
+    z-index: 999;
+} */
+
+/***************** 고정 코딩구역 *****************/
+.lbsmenu {
+  display: flex;
+  z-index: 99;
+  position: fixed;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.lbsmenu-box {
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  background-color: #ebe6d7;
+  flex-direction: column;
+}
+.lbsmenu-tit {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  margin-top: 12vh;
+  box-sizing: border-box;
+  padding-left: 2vw;
+  border-top: 1px solid #d1c7a3;
+  border-bottom: 1px solid #d1c7a3;
+  align-items: center;
+  font-family: var(--font-article);
+  font-size: min(3.6rem, 3.6rem);
+  letter-spacing: -0.7px;
+  font-weight: 200;
+}
+
+.smenu-imgBackbox {
+  display: flex;
+  justify-content: center;
+  height: 44vw;
+}
+.lbsmenu-imgbox {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  margin: 2.3vw;
+  padding: 2.5vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/**************** 고정 코딩 끝 *******************/
+
 .lookbookPage {
-  height: 500vh;
+  height: auto;
 }
 #cont-area {
   width: 100%;
@@ -29,84 +89,101 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: ;
+  transition: 0.6s ease-out;
 }
 .lookbookInbox a img:hover {
   scale: 1.05;
 }
 .lookbookInbox {
-  /* 이미지 부모박스 */
-  position: relative;
+  height: 200vh;
 }
 .lookBox1 {
-  position: absolute;
-  height: 23.526rem;
-  left: 22.94rem;
-  width: 32.125rem;
-  top: 23.562rem;
-  border: 1px solid;
+  translate: 10.6vw 24vh;
+  width: min(321px, 25.9vw);
+  height: auto;
+  display: block;
   overflow: hidden;
+}
+.lookBox1 img {
+  width: min(321px, 25.9vw);
+  object-fit: cover;
 }
 .lookBox2 {
-  position: absolute;
-  height: 30.576rem;
-  left: 77.25rem;
-  top: 33.783rem;
-  width: 31.003rem;
-  border: 1px solid;
+  width: min(310px, 25vw);
+  translate: 42vw 12vh;
+  height: auto;
+  display: block;
   overflow: hidden;
+}
+.lookBox2 img {
+  width: min(310px, 25vw);
+  object-fit: cover;
 }
 .lookBox3 {
-  position: absolute;
-  height: 32.662rem;
-  left: 145.011rem;
-  top: 19.562rem;
-  width: 28.015rem;
-  border: 1px solid;
+  width: min(280px, 23.3vw);
+  translate: 74vw -29vh;
+  height: auto;
+  display: block;
   overflow: hidden;
+}
+.lookBox3 img {
+  width: min(280px, 23.3vw);
+  object-fit: cover;
 }
 .lookBox4 {
-  position: absolute;
-  height: 35.418rem;
-  left: 118.936rem;
-  width: 33.43rem;
-  top: 67.505rem;
-  border: 1px solid;
+  width: min(334px, 27.8vw);
+  translate: 7vw -21vh;
+  height: auto;
+  display: block;
   overflow: hidden;
+}
+.lookBox4 img {
+  width: min(334px, 27.8vw);
+  object-fit: cover;
 }
 .lookBox5 {
-  position: absolute;
-  height: 23.575rem;
-  left: 15.1rem;
-  top: 68.2rem;
-  width: 32.918rem;
-  border: 1px solid;
+  width: min(329px, 27.3vw);
+  translate: 39vw -20vh;
+  height: auto;
+  display: block;
   overflow: hidden;
 }
+.lookBox4 img {
+  width: min(329px, 27.3vw);
+  object-fit: cover;
+}
+
 .lookBox6 {
-  position: absolute;
-  height: 33.418rem;
-  left: 72.549rem;
-  top: 92.941rem;
-  width: 31.43rem;
-  border: 1px solid;
+  width: min(314px, 26vw);
+  translate: 69vw -84vh;
+  height: auto;
+  display: block;
   overflow: hidden;
 }
+.lookBox4 img {
+  width: min(314px, 26vw);
+  object-fit: cover;
+}
+
 .lookBox7 {
-  position: absolute;
-  height: 31.576rem;
-  left: 21.002rem;
-  top: 113.4rem;
-  width: 26.344rem;
-  border: 1px solid;
+  width: min(263px, 37vw);
+  translate: 11vw -55vh;
+  height: auto;
+  display: block;
   overflow: hidden;
+}
+.lookBox4 img {
+  width: min(263px, 37vw);
+  object-fit: cover;
 }
 .lookBox8 {
-  position: absolute;
-  height: 24.575rem;
-  left: 100rem;
-  top: 85.4rem;
-  width: 31.843rem;
-  border: 1px solid;
+  width: min(318px, 37vw);
+  translate: 68vw -85vh;
+  height: auto;
+  display: block;
   overflow: hidden;
+}
+.lookBox4 img {
+  width: min(318px, 37vw);
+  object-fit: cover;
 }

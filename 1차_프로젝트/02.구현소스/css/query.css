@@ -21,14 +21,21 @@
     translate: 2vw 3vh;
     width: min(370px, 37vw);
     height: auto;
-    scale: 0;
     /* animation: show-ani 1s cubic-bezier(0.83,-0.2, 0.2, 1.47) forwards; */
     /* transition: 1s cubic-bezier(0.83,-0.2, 0.2, 1.47); */
   }
   /* body:hover .imgbox img:nth-child(2) {
     scale: 1;
   } */
-  
+
+  .imgbox img:nth-child(1) {
+    width: min(230px, 28vw);
+    height: auto;
+  }
+  .imgbox img:nth-child(5) {
+    width: min(570px, 70.7vw);
+    height: auto;
+  }
 }
 
 /* @keyframes show-ani {
@@ -38,7 +45,6 @@
     }
   }
 } */
-
 
 @media screen and (max-width: 1100px) {
   .imgbox img:nth-child(4) {
@@ -54,6 +60,20 @@
   }
 }
 @media screen and (max-width: 900px) {
+/* 상단 공통 */
+.minicart-box {
+  width: 100vw;
+}
+.minicart span:nth-child(2) {
+  width: 100vw;
+}
+.minicart span:nth-child(3) {
+  width: 21rem;
+}
+/* 메인 페이지 */
+  .main-video {
+    height: 90%;
+  }
   .recom-box {
     height: auto;
   }
@@ -62,7 +82,7 @@
     letter-spacing: -1px;
   }
   .recommendBox {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
   }
   .recommendBox > div {
@@ -74,6 +94,14 @@
   .shopbtn {
     display: none;
   }
+  .recommendBox > div {
+    width: 90vw;
+    height: 80vw;
+  }
+  .productDesc {
+    font-size: min(2.4vw, 1.4rem);
+    line-height: 160%;
+  }
   .recTextbox {
     align-items: center;
     justify-content: center;
@@ -84,7 +112,7 @@
     font-size: 2.3vw;
   }
   .productName {
-    font-size: 5.4vw;
+    font-size: 6.4vw;
   }
   .recommendBox::before {
     content: "";
@@ -96,6 +124,7 @@
     background-color: rgba(255, 255, 255, 0.604);
   }
 
+  /***************************** lookbook 영역  *****************************/
   .lookbook-page {
     height: auto;
   }
@@ -103,8 +132,16 @@
     flex-direction: column;
     padding-top: 5vh;
   }
+  .upTitBox {
+    font-size: 2.8vw;
+    height: 6vh;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+
   .lookbookBox > div {
     width: 100%;
+    padding: 7vh 0 0 0;
   }
   .lbtit {
     padding: 7vh 0px;
@@ -115,11 +152,22 @@
   .lbSlideDesc {
     height: auto;
   }
+  .downDescBox > div {
+    font-size: 2vw;
+  }
+  .prodBox {
+    width: 100%;
+  }
+  .categBox {
+    width: 100%;
+  }
+
   /* 순서정렬 필요한 박스 */
   .lbSlideBox {
     flex-direction: column;
     height: auto;
     background-color: transparent;
+    width: 75%;
   }
 
   .slideImg {
@@ -142,6 +190,13 @@
     margin-top: 0;
     padding: 2vh 0 5vh;
   }
+  .downDescBox div {
+    height: 4vh;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
   .materialsBox {
     display: flex;
     justify-content: space-between;
@@ -160,6 +215,10 @@
     position: static;
   }
 
+  /*************** article 영역 ***************/
+  .artiUpTit {
+    font-size: 2.5vw;
+  }
   /* 아래 박스 */
   .article-page {
     height: auto;
@@ -171,24 +230,95 @@
   .artVerbox {
     display: none;
   }
+  .artMainTit {
+    height: 16vh;
+    font-size: 9vw;
+    padding: 6vw 4vw;
+  }
   .artiTxtbox {
     width: 100%;
     height: auto;
   }
   .artiDesc {
     height: auto;
-    line-height: 2;
-    padding: 0;
+    line-height: 1.5;
+    padding: 5vh 3vh 8vh 2vh;
+    margin-top: 3vh;
+    font-size: min(1.6rem, 3.1vw);
+  }
+  .borderBox {
+    display: none;
   }
 
   .artiImgbox {
     width: 100%;
     height: auto;
   }
-
+  .subArti {
+    height: 200vh;
+  }
+  .subArtiContBox {
+    flex-direction: column;
+  }
+  .subArtiTit {
+    font-size: 5.5vw;
+    padding: 4.3vw 4.4vw 0;
+  }
+  .subArti1 {
+    margin-top: 4vh;
+  }
+  .subArti1 {
+    border: none;
+  }
+  .subArti2 {
+    border-top: 1px solid #d1c7a3;
+    border-right: none;
+    padding-top: 4vh;
+  }
+  .subArti2 .subArtiTxt {
+    margin-top: 2vh;
+  }
+  .subArti3 {
+    display: none;
+  }
+  .subartTxt {
+    font-size: 2vw;
+  }
+  .subartiTxt {
+    font-size: 2.2vw;
+    padding: 1.8vw 4.4vw;
+    margin-top: 7vh;
+  }
+  .subArtiTxt {
+    padding: 4.3vw 4.4vw 0;
+  }
+  .footcatBox {
+    height: 59%;
+  }
   .footcatBox > div {
     flex-basis: 50%;
     box-sizing: border-box;
+    padding: 3.2vh 7vh 5vh;
+  }
+  .footSecond,
+  .footForth {
+    border-right: none;
+  }
+  .footThird,
+  .footForth {
+    border-top: 1px solid #d1c7a3;
+  }
+  .footer-area {
+    height: auto;
+  }
+  .copyright {
+    font-size: 1.4vw;
+    padding: 0px 6vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footlogo-btn {
+    height: 30vh;
   }
 }
 @media screen and (max-width: 700px) {
@@ -208,7 +338,7 @@
     padding: 0px 1.5rem;
   }
   .hamShop-box {
-    height: 11rem;
+    height: 10vh;
   }
   .main-text {
     top: 46%;
@@ -216,16 +346,83 @@
   .shopAbtn {
     top: 65%;
   }
+  .about.page {
+    height: 80vh;
+  }
+  .mainTxt {
+    translate: -50% -140%;
+  }
+  .subTxt {
+    font-size: 3.1vw;
+    width: 100vw;
+  }
+  .imgbox img:nth-child(5) {
+    translate: -27vw -5vh;
+  }
+  .recTextbox {
+    gap: 4vh;
+  }
 }
 @media screen and (max-width: 500px) {
+  .main-text {
+    font-size: 7.8vw;
+    line-height: 4vh;
+    top: 40%;
+  }
   .mainTxt {
     font-size: 9.6vw;
     width: 90vw;
   }
+  .shopAbtn {
+    top: 55%;
+  }
+  .upTitBox {
+    font-size: 3.5vw;
+  }
+  .downDescBox div {
+    font-size: 2.7vw;
+  }
 
+  .subartiBox {
+    height: 98%;
+  }
   .subTxt {
     font-size: 3.1vw;
     width: 95vw;
     height: 30vw;
+  }
+  .imgbox img:nth-child(2) {
+    translate: 2vw 7vh;
+  }
+  .productDesc {
+    font-size: min(2.4vw, 2.3vw);
+    line-height: 160%;
+  }
+  .footCatTit {
+    font-size: 3vw;
+  }
+  .footlogo-btn {
+    height: 20vh;
+  }
+  @media screen and (max-width: 400px) {
+    .right-menu {
+      width: 15vw;
+    }
+    .hamShop-box {
+      height: 10vh;
+    }
+    .about.page {
+      height: 60vh;
+    }
+  }
+  .subTxt {
+    font-size: min(2.8vw, 7.9rem);
+    width: 90vw;
+  }
+  .subArtiTit {
+    font-size: 10.1vw;
+  }
+  .subArtiTxt {
+    margin-top: 1vh;
   }
 }

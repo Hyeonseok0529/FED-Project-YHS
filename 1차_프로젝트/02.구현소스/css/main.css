@@ -131,7 +131,6 @@ ol {
   /* 이미지 부모박스 */
   position: absolute;
 }
-/* 질문! : (미디어쿼리) 이미지들을 화면에 맞게 줄어들도록 하려면???????????????????????????? */
 .imgbox img {
   left: 50%;
 }
@@ -152,14 +151,6 @@ ol {
   top: 1rem;
   width: 37rem;
   object-fit: cover;
-  scale: 0;
-  animation: show-ani 1s cubic-bezier(0.83, -0.2, 0.2, 1.47) 2s forwards;
-}
-
-@keyframes show-ani {
-  to {
-    scale: 1;
-  }
 }
 
 .imgbox img:nth-child(3) {
@@ -286,7 +277,7 @@ ol {
   font-size: 4.4rem;
   display: block;
   font-family: var(--font-title);
-  color: #fff;
+  color: #ebe6d7;
   letter-spacing: -1.6px;
   transition: 0.4s ease-out;
   cursor: pointer;
@@ -296,7 +287,7 @@ ol {
 }
 .productDesc {
   display: block;
-  font-size: min(1.2vw, 1.2rem);
+  font-size: 1vw;
   font-family: var(--font-menu);
   color: #ebe6d7;
   font-weight: 400;
@@ -307,7 +298,7 @@ ol {
   position: relative;
   font-size: 2rem;
   font-family: var(--font-menu);
-  color: #fff;
+  color: #ebe6d7;
   letter-spacing: 1px;
 }
 .viewbtn::after {
@@ -319,7 +310,8 @@ ol {
   width: 0;
   height: 0.5px;
   margin-left: 100%;
-  background-color: #fff;
+  background-color: #ebe6d7;
+  opacity: 0.5;
   transition: 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .viewbtn:hover::after {
@@ -346,7 +338,7 @@ ol {
   color: #ebe6d7;
   font-family: var(--font-title);
   font-size: 2.5rem;
-  margin-top: 91vh;
+  margin-top: 88vh;
   rotate: 270deg;
   letter-spacing: -1.5px;
 }
@@ -616,7 +608,7 @@ ol {
   font-weight: 600;
   font-size: 3.2rem;
   rotate: 270deg;
-  translate: 0 1200%;
+  translate: 0 1600%;
   transform-origin: left top;
   letter-spacing: -3.5px;
   width: 187px;
@@ -628,7 +620,7 @@ ol {
   /* position: absolute; */
   display: block;
   width: 45%;
-  height: 90%;
+  height: 100%;
   /* top: 10vh;
   left: 5vw; */
   border-right: 1px solid #d1c7a3;
@@ -668,12 +660,14 @@ ol {
   font-weight: 400;
   padding: 6vw 2vw;
   font-size: 1vw;
+  color: #1f1f1f;
+  opacity: 0.8;
 }
 .artiImgbox {
   width: 50%;
 }
 .borderBox {
-  width: 50%;
+  width: 100%;
   border-bottom: 1px solid #d1c7a3;
   font-family: var(--font-menu);
   height: 4vh;
@@ -688,7 +682,10 @@ ol {
   padding-right: 2vw;
 }
 .imgBox {
-  height: 86vh;
+  width: 95%;
+  height: 90%;
+  margin: 0 auto;
+  margin-top: 3vh;
   overflow: hidden;
 }
 .imgBox img {
@@ -756,10 +753,11 @@ ol {
 }
 .subArtiTit {
   font-family: var(--font-article);
-  font-size: 3.4rem;
+  font-size: 3.5rem;
   font-weight: 500;
   letter-spacing: -0.9px;
   width: 100%;
+  height: 15vh;
   box-sizing: border-box;
   padding: 0.8vw 1.4vw;
   transition: 0.4s ease-out;

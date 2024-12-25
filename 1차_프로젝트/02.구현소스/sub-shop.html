@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seamless Furnitures | SOL'ACE</title>
+    <title>Shop | Sol’ace</title>
     <!-- 탭 아이콘 출력 -->
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <!-- 서브페이지-룩북 CSS 불러오기 -->
-    <link rel="stylesheet" href="./css/sub-lookbook.css" />
+    <link rel="stylesheet" href="./css/sub-shop.css" />
     <link rel="stylesheet" href="./css/query.css" />
     <!-- 제이쿼리 -->
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
 
     <!-- 룩북 JS -->
-    <script src="./js/sub-lookbook.js" defer></script>
+    <script src="./js/sub-shop.js" defer></script>
     <!-- 스크롤 JS -->
     <script src="js/smoothScroll20.js"></script>
 
@@ -28,8 +28,7 @@
     </script>
   </head>
   <body class="scbar">
-    <div class="total-wrap">
-      <div class="in-wrap">
+
         <!-- 상단 고정 코딩구역 시작 -->
         <!-- 페이드 박스 -->
         <div class="fadebox"></div>
@@ -43,35 +42,8 @@
             <span class="close">CLOSE</span>
           </div>
         </div>
-        <!-- LOOBOOK 서브메뉴 -->
-        <div class="lbsmenu">
-          <!-- LOOBOOK 서브메뉴 박스 -->
-          <div class="lbsmenu-box">
-            <div class="lbsmenu-upbox">
-              <span class="lbsmenu-tit">Funyl Lamp</span>
-              <a href="#" class="lbsmenu-close">CLOSE</a>
-            </div>
-
-            <div class="smenu-imgBackbox">
-              <a href="#" class="lbsmenu-imgbox">
-                <img src="./images/lookbook/lookbook 1.jpg" alt="lookbook 1" />
-              </a>
-              <div class="lbsmenu-descBox">
-                <div class="lbsmenu-desc">DESCRIPTION</div>
-              </div>
-              <div class="lbsmenu-txtbox">
-                <div class="lbsmenu-txt">
-                  Refinement Chair with Ripped Seat, made of retro Eucalyptus
-                  wood, of great resistance, Kiln dried, made with a spike
-                  system and painted with P.U. (Polyurethane)
-                </div>
-              </div>
-              <div class="seebtnBox">
-                <a href="#" class="seebtn">SEE PRODUCT</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- shop 서브메뉴 -->
+        <div class="sub-shop-smenu"></div>
         <!-- 1.상단영역 -->
         <div id="top-area">
           <header class="top-area inbox">
@@ -237,62 +209,173 @@
         </div>
         <div class="topBdbox"></div>
         <!-- 상단 고정 코딩구역 종료  -->
-        <!-- 2. 룩북 영역 -->
-        <section class="lookbookPage">
-          <h2 class="blind">Lookbook</h2>
+        <div class="total-wrap">
+          <div class="in-wrap">
+        <!-- 2. SHOP 영역 -->
+        <section class="shopPage">
+          <h2 class="blind">shop</h2>
           <!-- 2-1.컨텐츠영역 -->
           <div id="cont-area">
-            <!-- 컨텐츠 박스 -->
-            <main class="lookbookInbox">
-              <!-- 이미지 박스 -->
-              <a href="#" class="lookBox1">
-                <img
-                  src="./images/lookbook/lookbook 1.jpg"
-                  alt="lookbook image 1"
-                />
-              </a>
-              <a href="#" class="lookBox2">
-                <img
-                  src="./images/lookbook/lookbook 2.jpg"
-                  alt="lookbook image 2"
-                />
-              </a>
-              <a href="#" class="lookBox3">
-                <img
-                  src="./images/lookbook/lookbook 3.png"
-                  alt="lookbook image 3"
-                />
-              </a>
-              <a href="#" class="lookBox4">
-                <img
-                  src="./images/lookbook/lookbook 4.jpg"
-                  alt="lookbook image 4"
-                />
-              </a>
-              <a href="#" class="lookBox5">
-                <img
-                  src="./images/lookbook/lookbook 5.jpg"
-                  alt="lookbook image 5"
-                />
-              </a>
-              <a href="#" class="lookBox6">
-                <img
-                  src="./images/lookbook/lookbook 6.jpg"
-                  alt="lookbook image 6"
-                />
-              </a>
-              <a href="#" class="lookBox7">
-                <img
-                  src="./images/lookbook/lookbook 7.png"
-                  alt="lookbook image 7"
-                />
-              </a>
-              <a href="#" class="lookBox8">
-                <img
-                  src="./images/lookbook/lookbook 8.jpg"
-                  alt="lookbook image 8"
-                />
-              </a>
+            <!-- 컨텐츠 플렉스 박스 -->
+            <main class="shopInbox">
+              <!-- shop 타이틀 -->
+              <h2 class="sub-shopTit">SHOP ALL</h2>
+              <!-- 안내박스 -->
+              <div class="sub-shopInfobox">
+                <div class="pdNum">4 PRODUCTS</div>
+                <div class="searchBox">
+                  <input type="text" placeholder="SEARCH" />
+                </div>
+              </div>
+              <!-- shop 메인 플렉스 박스 -->
+              <div class="sub-shop-main">
+                <!-- 필터박스 -->
+                <div class="sub-filterBox">
+                  <ul class="filter">
+                    <li>
+                      <span>FILTERS</span>
+                    </li>
+                    <li>
+                      <span>FURNITURES</span>
+                    </li>
+                    <li>
+                      <span>DECORS</span>
+                    </li>
+                    <li>
+                      <span>CHAIRS</span>
+                    </li>
+                    <li>
+                      <span>LAMP</span>
+                    </li>
+                    <li>
+                      <span>CERAMICS</span>
+                    </li>
+                    <li>
+                      <span>IRON</span>
+                    </li>
+                    <li>
+                      <span>WOOD</span>
+                    </li>
+                  </ul>
+                  <ul class="sort">
+                    <li>
+                      <span>SORT BY</span>
+                    </li>
+                    <li>
+                      <span>Price: Low to High</span>
+                    </li>
+                    <li>
+                      <span>Price: High to Low</span>
+                    </li>
+                    <li>
+                      <span>A-Z</span>
+                    </li>
+                    <li>
+                      <span>Z-A</span>
+                    </li>
+                    <li>
+                      <span>Oldest to Newest</span>
+                    </li>
+                    <li>
+                      <span>Newest to Oldest</span>
+                    </li>
+                    <li>
+                      <span>Best Selling</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 이미지 플렉스 박스 -->
+                <div class="sub-shop-imgBox">
+                  <!-- 이미지1 겉박스 -->
+                  <div class="shopoutBox">
+                    <!-- 이미지1 속박스 -->
+                    <a href="#" class="shopImg">
+                      <img
+                        src="./images/sub-shop/CHARA1_700x .png"
+                        alt="shop image 1"
+                      />
+                      <!-- 호버 사이즈 박스 -->
+                      <div class="sizeBox">
+                        <div class="40">40X40</div>
+                        <div class="80">80X80</div>
+                        <div class="100">100X100</div>
+                        <div class="122">122X122</div>
+                      </div>
+                    </a>
+                    <!-- 글상자 -->
+                    <div class="pdInfobox">
+                      <div class="name">ONYX WOOD CHAIR</div>
+                      <div class="price">$4,699</div>
+                    </div>
+                  </div>
+                  <!-- 이미지2 겉박스 -->
+                  <div class="shopoutBox">
+                    <!-- 이미지2 속박스 -->
+                    <a href="#" class="shopImg">
+                      <img
+                        src="./images/sub-shop/CHARB1_700x .png "
+                        alt="shop image 2"
+                      />
+                      <!-- 호버 사이즈 박스 -->
+                      <div class="sizeBox">
+                        <div class="40">40X40</div>
+                        <div class="80">80X80</div>
+                        <div class="100">100X100</div>
+                        <div class="122">122X122</div>
+                      </div>
+                    </a>
+                    <!-- 글상자 -->
+                    <div class="pdInfobox">
+                      <div class="name">Paola Wood Chair</div>
+                      <div class="price">$5,900</div>
+                    </div>
+                  </div>
+                  <!-- 이미지3 겉박스 -->
+                  <div class="shopoutBox">
+                    <!-- 이미지3 속박스 -->
+                    <a href="#" class="shopImg">
+                      <img
+                        src="./images/sub-shop/CHARC1_700x.jpg "
+                        alt="shop image 3"
+                      />
+                      <!-- 호버 사이즈 박스 -->
+                      <div class="sizeBox">
+                        <div class="40">40X40</div>
+                        <div class="80">80X80</div>
+                        <div class="100">100X100</div>
+                        <div class="122">122X122</div>
+                      </div>
+                    </a>
+                    <!-- 글상자 -->
+                    <div class="pdInfobox">
+                      <div class="name">Elen Wood Chair</div>
+                      <div class="price">$3,900</div>
+                    </div>
+                  </div>
+                  <!-- 이미지4 겉박스 -->
+                  <div class="shopoutBox">
+                    <!-- 이미지4 속박스 -->
+                    <a href="#" class="shopImg">
+                      <img
+                        src="./images/sub-shop/CHARD1_700x .png"
+                        alt="shop image 4"
+                      />
+                      <!-- 호버 사이즈 박스 -->
+                      <div class="sizeBox">
+                        <div class="40">40X40</div>
+                        <div class="80">80X80</div>
+                        <div class="100">100X100</div>
+                        <div class="122">122X122</div>
+                      </div>
+                    </a>
+                    <!-- 글상자 -->
+                    <div class="pdInfobox">
+                      <div class="name">Native Iron Chair</div>
+                      <div class="price">$4,990</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </main>
           </div>
         </section>

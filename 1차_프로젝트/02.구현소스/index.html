@@ -5,17 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seamless Furnitures | SOL'ACE</title>
     <!-- 탭 아이콘 출력 -->
-    <!-- <link rel="shortcut icon" href="./images/로고.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <!-- 메인페이지 CSS 불러오기 -->
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/query.css" />
+    <!-- 로딩 애니메이션 CSS -->
+    <link rel="stylesheet" href="./css/loading.css" />
     <!-- 제이쿼리 -->
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
 
+    <!-- 스크롤 JS -->
+    <script src="js/smoothScroll20.js"></script>
+
+    <script>
+      $(function () {
+        /// jQB //////////////////
+
+        /// 부드러운 스크롤 호출!(제이쿼리 아님!)
+        startSS();
+      }); ////////// jQB //////////////////////
+    </script>
+
+    <!-- 메인 JS -->
     <script src="./js/main.js" defer></script>
   </head>
-  <body>
+  <body class="scbar">
+    <div class="pg-cover">
+      <div class="ldContbox">
+        <a href="#" class="aniImg1">
+          <img src="./images/loading-ani/ldImg1.jpg" alt="Loading Image1" />
+        </a>
+        <a href="#" class="aniImg2">
+          <img src="./images/loading-ani/ldImg2.png" alt="Loading Image2" />
+        </a>
+        <a href="#" class="aniImg3">
+          <img src="./images/loading-ani/ldImg3.jpg" alt="Loading Image3" />
+        </a>
+        <a href="#" class="aniImg4">
+          <img src="./images/loading-ani/ldImg4.png" alt="Loading Image4" />
+        </a>
+        <a href="#" class="aniImg5">
+          <img src="./images/loading-ani/ldimg5.jpg" alt="Loading Image5" />
+        </a>
+        <a href="#" class="aniImg6">
+          <img src="./images/loading-ani/ldImg6.jpg" alt="Loading Image6" />
+        </a>
+        <a href="#" class="aniImg7">
+          <img src="./images/loading-ani/ldimg7.png" alt="Loading Image7" />
+        </a>
+      </div>
+    </div>
     <div class="total-wrap">
       <div class="in-wrap">
         <!-- 상단 고정 코딩구역 시작 -->
@@ -68,7 +108,7 @@
                                 <a href="#">HOME</a>
                               </dd>
                               <dd>
-                                <a href="#">SHOP</a>
+                                <a href="#" class="shop">SHOP</a>
                               </dd>
                               <dd>
                                 <a href="#">LOOKBOOK</a>
@@ -83,7 +123,7 @@
                                 <a href="#">HOME</a>
                               </dd>
                               <dd>
-                                <a href="#">SHOP</a>
+                                <a href="#" class="shop">SHOP</a>
                               </dd>
                               <dd>
                                 <a href="#">LOOKBOOK</a>
@@ -98,7 +138,7 @@
                                 <a href="#">HOME</a>
                               </dd>
                               <dd>
-                                <a href="#">SHOP</a>
+                                <a href="#" class="shop">SHOP</a>
                               </dd>
                               <dd>
                                 <a href="#">LOOKBOOK</a>
@@ -328,12 +368,44 @@
                       <a href="#" class="lbshopbtn">SHOP ALL</a>
                     </div>
                     <!-- 슬라이드 이미지 -->
-                    <div class="slideImg">
-                      <img
-                        src="./images/lb_slide1.png"
-                        alt="lookbook slide image1"
-                      />
-                    </div>
+                    <ul class="slide">
+                      <li class="slideImg">
+                        <img
+                          src="./images/lb_slide1.png"
+                          alt="lookbook slide image1"
+                        />
+                      </li>
+                      <li class="slideImg">
+                        <img
+                          src="./images/lb_slide2.png"
+                          alt="lookbook slide image1"
+                        />
+                      </li>
+                      <li class="slideImg">
+                        <img
+                          src="./images/lb_slide3.png"
+                          alt="lookbook slide image1"
+                        />
+                      </li>
+                      <li class="slideImg">
+                        <img
+                          src="./images/lb_slide4.jpg"
+                          alt="lookbook slide image1"
+                        />
+                      </li>
+                      <li class="slideImg">
+                        <img
+                          src="./images/lb_slide5.jpg"
+                          alt="lookbook slide image1"
+                        />
+                      </li>
+                      <li class="slideImg">
+                        <img
+                          src="./images/lb_slide6.jpg"
+                          alt="lookbook slide image1"
+                        />
+                      </li>
+                    </ul>
                   </div>
                   <!-- 하단 설명박스 -->
                   <div class="downDescBox">
@@ -494,7 +566,7 @@
                     <a href="#" class="footCat">Lookbook</a>
                   </li>
                   <li>
-                    <a href="#" class="footCat">Shop</a>
+                    <a href="#" class="footCatshop">Shop</a>
                   </li>
                   <li>
                     <a href="#" class="footCat">Contact</a>
@@ -513,7 +585,7 @@
                     <a href="#" class="footCat">Lookbook</a>
                   </li>
                   <li>
-                    <a href="#" class="footCat">Shop</a>
+                    <a href="#" class="footCatshop">Shop</a>
                   </li>
                   <li>
                     <a href="#" class="footCat">Contact</a>
@@ -532,7 +604,7 @@
                     <a href="#" class="footCat">Lookbook</a>
                   </li>
                   <li>
-                    <a href="#" class="footCat">Shop</a>
+                    <a href="#" class="footCatshop">Shop</a>
                   </li>
                   <li>
                     <a href="#" class="footCat">Contact</a>
@@ -551,7 +623,7 @@
                     <a href="#" class="footCat">Lookbook</a>
                   </li>
                   <li>
-                    <a href="#" class="footCat">Shop</a>
+                    <a href="#" class="footCatshop">Shop</a>
                   </li>
                   <li>
                     <a href="#" class="footCat">Contact</a>

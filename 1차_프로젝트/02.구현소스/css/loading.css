@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-body {
-  background-color: #ebe6d7;
-}
 
 .ldContbox {
   width: 54%;
@@ -14,6 +11,9 @@ body {
   position: relative;
 }
 
+.ldContbox a{
+  cursor: default;
+}
 /* 이미지 1 */
 .aniImg1 {
   width: 50%;
@@ -39,11 +39,10 @@ body {
 /* 이미지 2 */
 .aniImg2 {
   position: absolute;
-  top: 41vh;
-  left: 0;
+  top: 24rem;
+  left: -11vw;
   width: 37%;
   height: auto;
-  display: inline-block;
   overflow: hidden;
 }
 
@@ -63,8 +62,8 @@ body {
 /* 이미지 3 */
 .aniImg3 {
   position: absolute;
-  top: 59vh;
-  left: 16vw;
+  top: 47rem;
+  left: 0vw;
   width: 30%;
   height: auto;
   display: inline-block;
@@ -111,8 +110,8 @@ body {
 /* 이미지 5 */
 .aniImg5 {
   position: absolute;
-  top: 20vh;
-  left: 33vw;
+  top: 31vh;
+  left: 42vw;
   width: 34%;
   height: auto;
   display: inline-block;
@@ -135,7 +134,7 @@ body {
 /* 이미지 6 */
 .aniImg6 {
   position: absolute;
-  top: 2vh;
+  top: 10vh;
   left: 22vw;
   width: 34%;
   height: auto;
@@ -159,8 +158,8 @@ body {
 /* 이미지 7 */
 .aniImg7 {
   position: absolute;
-  top: 8vh;
-  left: 4vw;
+  top: 11vh;
+  left: 1vw;
   width: 34%;
   height: auto;
   display: inline-block;
@@ -185,13 +184,14 @@ body {
 /* 페이지 전환효과용 가림막 */
 .pg-cover {
   position: fixed;
-  z-index: 9999;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100vw;
-  /* height: 0vh; */
+  height: 100vh;
+
         /* display: none; */
-  background-color: black;
+  background-color: #ebe6d7;
   /* 트랜지션: 속시이지 */
   /* transition: all 0.8s ease-in-out; */
   /* -> 애니메이션을 줄때에는 트랜지션을 빼야한다! */

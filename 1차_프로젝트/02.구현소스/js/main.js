@@ -5,7 +5,7 @@ $(".hambtn").click(function (e) {
   e.preventDefault();
   e.stopPropagation();
   let isOn = $(this).is(".on");
-  $(".smenu").css({ translate: isOn ? "0" : "0 -150%" });
+  $(".smenu").css({ translate: isOn ? "0" : "0 calc(-100% - 104px)" });
   $("body").toggleClass("on");
 });
 

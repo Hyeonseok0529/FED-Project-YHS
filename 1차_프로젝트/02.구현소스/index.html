@@ -20,6 +20,9 @@
 
     <script>
       $(function () {
+        console.log(location.search);
+        if(location.search!='')
+          $('body').addClass('set');
         /// jQB //////////////////
 
         /// 부드러운 스크롤 호출!(제이쿼리 아님!)
